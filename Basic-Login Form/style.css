@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #FF9843;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    height: 482px;
+    width: 336px;
+    background-color: #FFDD95;
+    border-radius: 25px;
+    padding: 33px;
+    box-shadow: 12px 12px 30px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato',Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+.header::after{
+    content: "";
+    margin-left: -5px;
+    margin-top: -2px;
+    height: 4px;
+    width: 32px;
+    background: linear-gradient(200deg, rgba(52, 104, 192, 1), rgba(138, 177, 242, 1));
+    border-radius: 9px;
+}
+
+.credentials {
+    margin-top: 117px;
+}
+
+.username {
+    display: flex;
+    flex-direction: column;
+}
+
+.username input {
+    width: 325px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    background: none;
+    padding-left: 6px;
+    padding-bottom: 3px;
+}
+
+.username input:focus-visible {
+    outline: none;
+}
+
+.username .input-down-1 {
+    width: 330px;
+    height: 4px;
+    position: relative;
+    background: linear-gradient(200deg, rgba(134, 167, 252, 1), rgba(134, 167, 252, 1));
+    border-radius: 9px;
+}
+
+.username input:focus-visible + .input-down-1::after {
+    content: "";
+    border-radius: 9px;
+    position: absolute;
+    width: 330px;
+    height: 4px;
+    background: linear-gradient(200deg, rgba(187, 63, 207, 1), rgba(52, 104, 192, 1));
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+}
+
+.password input {
+    width: 325px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    background: none;
+    padding-left: 6px;
+    padding-bottom: 3px;
+    margin-top: 35px;
+}
+
+.password input:focus-visible {
+    outline: none;
+}
+
+.password .input-down {
+    width: 330px;
+    height: 4px;
+    position: relative;
+    background: linear-gradient(200deg, rgba(134, 167, 252, 1), rgba(134, 167, 252, 1));
+    border-radius: 9px;
+}
+
+.password input:focus-visible+.input-down::after {
+    content: "";
+    border-radius: 9px;
+    position: absolute;
+    width: 330px;
+    height: 4px;
+    background: linear-gradient(200deg, rgba(187, 63, 207, 1) ,rgba(52, 104, 192, 1));
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.actions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: black;
+    gap: 13px;
+}
+
+.continue {
+    width: 150px;
+    height: 28px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background-color: #3468C0;
+    border-radius: 4px;
+    border: none;
+}
+
+.google {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    background-color: #D62D20;
+    font-size: 14px;
+    color: white;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.bx.bxl-google {
+    position: absolute;
+    left: 10px;
+    font-size: 18px;
+    
+}
+
+.twitter {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    background-color: #0AA4FC;
+    font-size: 14px;
+    color: white;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.bx.bxl-twitter {
+    position: absolute;
+    left: 10px;
+    font-size: 18px;
+}
+
+.git {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    background-color: #157B08;
+    font-size: 14px;
+    color: white;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.bx.bxl-github {
+    position: absolute;
+    left: 10px;
+    font-size: 18px;
+}
